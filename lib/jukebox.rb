@@ -36,7 +36,7 @@ songs.each_with_index do |song, index|
   if selection == song 
     return_statement = "Playing #{song}"
     elsif selection == selection == (index + 1).to_s
-    return_statement = 
+    return_statement = "Playing #{song}"
   else
     return_statement = "Invalid input, please try again"
     break
