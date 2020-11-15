@@ -37,7 +37,7 @@ songs.each_with_index do |song, index|
     return_statement = "Playing #{song}"
     # binding.pry
   else
-    return_statement = "Invalid input, please try again"
+    
     break
   end
 end
