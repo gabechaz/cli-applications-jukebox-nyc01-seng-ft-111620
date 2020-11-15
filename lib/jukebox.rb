@@ -49,6 +49,8 @@ def play(songs)
   selection = gets.strip
   if selection.to_i >= 1 && selection.to_i <= songs.length 
     puts "Playing #{songs[selection.to_i - 1]}"
+    elsif songs.include?(selection)
+    puts "Playing #{selection}"
   end
 end
 def exit_jukebox
