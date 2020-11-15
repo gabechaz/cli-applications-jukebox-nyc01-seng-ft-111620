@@ -28,23 +28,28 @@ def list(songs)
   puts "#{index + 1}. #{item}"}
 end
 
+# def play(songs)
+  
+# puts "Please enter a song name or number:"
+# selection = gets.strip
+# songs.each_with_index do |song, index|
+#   if selection == song 
+#     puts = "Playing #{song}"
+#     elsif selection == (index + 1).to_s
+#     puts "Playing #{song}"
+#   else
+#     puts "Invalid input, please try again"
+#     break
+#   end
+# end
+# puts return_statement
+# end
 def play(songs)
-  return_statement = nil
-puts "Please enter a song name or number:"
-selection = gets.strip
-songs.each_with_index do |song, index|
-  if selection == song 
-    return_statement = "Playing #{song}"
-    elsif selection == (index + 1).to_s
-    return_statement = "Playing #{song}"
-  else
-    return_statement = "Invalid input, please try again"
-    break
-  end
+  puts "Please enter a song name or number:"
+  selection = gets.strip
+  if selection.to_i >= 1 && selection.to_i <= songs.length 
+    puts "Playing #{songs[selection.to_i - 1]}"
 end
-puts return_statement
-end
-
 def exit_jukebox
   puts "Goodbye"
 end
