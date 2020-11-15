@@ -34,7 +34,7 @@ selection = gets.strip
 songs.each_with_index do |song, index|
   if selection == song || selection == (index + 1).to_s
     puts "Playing #{song}"
-    binding.pry
+    # binding.pry
   else
     puts "Invalid input, please try again"
     break
