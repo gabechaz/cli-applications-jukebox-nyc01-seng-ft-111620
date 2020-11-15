@@ -46,6 +46,7 @@ def exit_jukebox
 end
 
 def run(songs)
+  program_status = "live"
   until program_status == "dead"
   puts "Please enter a command:"
   user_input = gets.strip
@@ -60,7 +61,7 @@ def run(songs)
   end
   if user_input == "exit"
     exit_jukebox
-    break
+    program_status = "dead"
   end
 end
 end
