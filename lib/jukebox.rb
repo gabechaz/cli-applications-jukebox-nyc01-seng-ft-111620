@@ -31,7 +31,7 @@ end
 def play(songs)
   return_statement = nil
 puts "Please enter a song name or number:"
-selection = gets.strip.to_s
+selection = gets.strip
 songs.each_with_index do |song, index|
   if selection == song 
     return_statement = "Playing #{song}"
