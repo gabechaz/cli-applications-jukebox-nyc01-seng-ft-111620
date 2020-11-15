@@ -34,6 +34,7 @@ songs.each_with_index do |song, index|
     puts "Playing #{song}"
   else
     puts "Invalid input, please try again"
+    break
   end
 end
 end
