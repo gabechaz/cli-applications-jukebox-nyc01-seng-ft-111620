@@ -1,3 +1,5 @@
+require 'pry'
+
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -32,6 +34,7 @@ selection = gets.strip
 songs.each_with_index do |song, index|
   if selection == song || selection == (index + 1)
     puts "Playing #{song}"
+    binding.pry
   else
     puts "Invalid input, please try again"
     break
